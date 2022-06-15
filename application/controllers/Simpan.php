@@ -42,7 +42,16 @@ class Simpan extends CI_Controller
 			$datasensor = array('data_sensor' => $panjang, 'waktu' => time());
 
 			if ($this->m_belajar->save($datasensor)) {
-				echo "BERHASIL";
+				header('Content-Type: application/json', true, 200);
+
+				$responses["code"] = 200;
+		
+				$responses["message"] = "BERHASIL";
+		
+				echo json_encode($responses);
+		
+				return;
+		
 			} else {
 				echo "ERROR";
 			}

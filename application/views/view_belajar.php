@@ -430,7 +430,7 @@ www.yukcoding.id
 		function deletes(id) {
 			console.log(id, '')
 			if (confirm("Are you sure you want to delete this?"))
-				fetch('/oit/index.php/simpan/delete?id=' + id)
+				fetch('/index.php/simpan/delete?id=' + id)
 				.then(response => response)
 				.then(data => {
 					console.log(data, 'k')
