@@ -1,0 +1,3 @@
+[31-May-2022 13:34:46 Asia/Jakarta] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/kevc9441/public_html/application/controllers/Simpan.php on line 49
+[31-May-2022 13:34:47 Asia/Jakarta] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/kevc9441/public_html/application/controllers/Simpan.php on line 49
+[31-May-2022 13:35:02 Asia/Jakarta] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/kevc9441/public_html/application/controllers/Simpan.php on line 49
