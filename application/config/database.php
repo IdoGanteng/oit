@@ -80,7 +80,7 @@ $db['default'] = array(
 	'username' => 'username',
 	'password' => '@Cobacoba123',
 	'database' => 'iot',
-	'dbdriver' => 'mysqli',
+	'dbdriver' => 'mysql',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
