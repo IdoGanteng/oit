@@ -1,8 +1,0 @@
-<VirtualHost *:80>
-    ServerName tecadmin.local
-    ServerAlias www.tecadmin.local
-    DocumentRoot /var/www/oit/public
-    <Directory /var/www/oit>
-          Allowoverride All
-    </Directory>
-</VirtualHost>
