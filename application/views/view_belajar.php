@@ -330,7 +330,7 @@ www.yukcoding.id
 		}
 
 		table tbody tr td:nth-child(4):before {
-			content: "Price";
+			content: "Action";
 		}
 
 		table tbody tr td:nth-child(5):before {
