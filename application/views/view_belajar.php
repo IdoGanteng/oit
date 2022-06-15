@@ -381,7 +381,7 @@ www.yukcoding.id
 			<div class="wrap-table100" style="margin-top: -10vh;">
 				<div class="judul">
 					<h1>Memboemi Cafe</h1>
-					<h2>Pencatatan Volume Tandon Air Mani </h2>
+					<h2>Pencatatan Volume Tandon Air </h2>
 				</div>
 				<div class="table100" style="margin-top: 25vh">
 					<table>
