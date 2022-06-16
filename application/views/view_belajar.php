@@ -318,15 +318,15 @@ www.yukcoding.id
 		}
 
 		table tbody tr td:nth-child(1):before {
-			content: "Date";
+			content: "Nomor";
 		}
 
 		table tbody tr td:nth-child(2):before {
-			content: "Order ID";
+			content: "Data Sensor";
 		}
 
 		table tbody tr td:nth-child(3):before {
-			content: "Name";
+			content: "Waktu";
 		}
 
 		table tbody tr td:nth-child(4):before {
