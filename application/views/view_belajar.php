@@ -378,7 +378,7 @@ www.yukcoding.id
 
 	<div class="limiter">
 		<div class="container-table100">
-			<div class="wrap-table100" style="margin-top: -10vh;">
+			<div class="wrap-table100" style="margin-top: 5vh;">
 				<div class="judul">
 					<h1>Memboemi Cafe</h1>
 					<h2>Pencatatan Volume Tandon Air </h2>
@@ -414,7 +414,7 @@ www.yukcoding.id
 			</div>
 		</div>
 		<div class="mr-auto">
-			<span class="mr-1">Powered by</span>
+			<span class="mr-1">Dibantu oleh</span>
 			<a href="https://kevadamarg.com" target="_blank">Keva Damar Galih</a>
 		</div>
 	</div>
