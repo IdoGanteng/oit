@@ -24,9 +24,9 @@
 	.judul {
 		background: #f50101;
 		background: -webkit-linear-gradient(45deg, #031368, #c4c4c4);
-		background: -o-linear-gradient(45deg,  #031368, #c4c4c4);
-		background: -moz-linear-gradient(45deg,  #031368, #c4c4c4);
-		background: linear-gradient(45deg,  #031368, #c4c4c4);
+		background: -o-linear-gradient(45deg, #031368, #c4c4c4);
+		background: -moz-linear-gradient(45deg, #031368, #c4c4c4);
+		background: linear-gradient(45deg, #031368, #c4c4c4);
 		width: 70vw;
 		padding: 30px;
 		margin: auto;
@@ -174,9 +174,9 @@ www.yukcoding.id
 		min-height: 100vh;
 		background: #fdfdfd;
 		background: -webkit-linear-gradient(45deg, #031368, #c4c4c4);
-		background: -o-linear-gradient(45deg,  #031368, #c4c4c4);
-		background: -moz-linear-gradient(45deg,  #031368, #c4c4c4);
-		background: linear-gradient(45deg,  #031368, #c4c4c4);
+		background: -o-linear-gradient(45deg, #031368, #c4c4c4);
+		background: -moz-linear-gradient(45deg, #031368, #c4c4c4);
+		background: linear-gradient(45deg, #031368, #c4c4c4);
 
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -372,6 +372,16 @@ www.yukcoding.id
 	body {
 		font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 	}
+
+
+
+	/* dd */
+	.footer {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 10px 0;
+	}
 </style>
 
 <body>
@@ -413,9 +423,12 @@ www.yukcoding.id
 				</div>
 			</div>
 		</div>
-		<div class="mr-auto">
-			<span class="mr-1">Dibantu oleh</span>
+		<div class="mx-auto footer">
+			<span id="power" style="padding-right: 10px;">Powered By</span>
+			<a href="https://github.com/kevadamar" target="_blank">IM3 Oreedo</a>
+			<b style="padding: 0 10px;">&</b>
 			<a href="https://kevadamarg.com" target="_blank">Keva Damar Galih</a>
+			<button onclick="logot()">logot</button>
 		</div>
 	</div>
 
@@ -427,6 +440,15 @@ www.yukcoding.id
 	<!--===============================================================================================-->
 	<script src="/js/main.js"></script>
 	<script>
+		function logot() {
+			window.localStorage.removeItem('login')
+			window.location.reload()
+		}
+
+		function routto() {
+			window.location.href = 'login'
+		}
+
 		function deletes(id) {
 			console.log(id, '')
 			if (confirm("Are you sure you want to delete this?"))
@@ -437,6 +459,13 @@ www.yukcoding.id
 					alert('success delete');
 					window.location.reload();
 				})
+		}
+
+		document.getElementById('power').innerHTML = 'Powered By'
+		const getLocal = window.localStorage.getItem('login')
+
+		if (!getLocal) {
+			routto()
 		}
 	</script>
 

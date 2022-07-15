@@ -45,13 +45,12 @@ class Simpan extends CI_Controller
 				header('Content-Type: application/json', true, 200);
 
 				$responses["code"] = 200;
-		
+
 				$responses["message"] = "BERHASIL";
-		
+
 				echo json_encode($responses);
-		
+
 				return;
-		
 			} else {
 				echo "ERROR";
 			}
@@ -60,6 +59,10 @@ class Simpan extends CI_Controller
 		}
 	}
 
+	public function login()
+	{
+		$this->load->view('login');
+	}
 	public function tampilan()
 	{
 		date_default_timezone_set("Asia/Jakarta");
