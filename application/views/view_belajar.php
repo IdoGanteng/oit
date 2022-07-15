@@ -450,9 +450,9 @@ www.yukcoding.id
 		}
 
 		function deletes(id) {
-			console.log(id, '')
+			console.log(id, '<?php echo $_SERVER['PHP_SELF']; ?>')
 			if (confirm("Are you sure you want to delete this?"))
-				fetch('/index.php/simpan/delete?id=' + id)
+				fetch('<?php echo $_SERVER['PHP_SELF']; ?>'.replace('/tampilan','') + '/delete?id=' + id)
 				.then(response => response)
 				.then(data => {
 					console.log(data, 'k')
