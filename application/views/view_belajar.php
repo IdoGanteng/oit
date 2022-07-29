@@ -428,7 +428,7 @@ www.yukcoding.id
 			<a href="https://github.com/kevadamar" target="_blank">IM3 Oreedo</a>
 			<b style="padding: 0 10px;">&</b>
 			<a href="https://kevadamarg.com" target="_blank">Keva Damar Galih</a>
-			<button onclick="logot()">logot</button>
+			<button onclick="logot()">Logout</button>
 		</div>
 	</div>
 

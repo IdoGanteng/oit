@@ -88,7 +88,7 @@
             <label for="password"> password </label>
             <input id="password" name="password" required type="password" />
 
-            <button onclick="savedata()">Sambit</button>
+            <button onclick="savedata()">Submit</button>
         </div>
     </div>
     <div class="footer">
