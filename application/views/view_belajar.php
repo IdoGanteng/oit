@@ -412,12 +412,30 @@
 		.wrappers {
 			width: 70vw;
 		}
+
+		table thead tr {
+			height: 100px;
+			padding: 5px;
+		}
+
+		.judul {
+			width: 100%;
+		}
 	}
 
 	/* Medium devices (landscape tablets, 768px and up) */
 	@media only screen and (min-width: 768px) {
 		.wrappers {
 			width: 65vw;
+		}
+
+		table thead tr {
+			height: 100px;
+			padding: 5px;
+		}
+
+		.judul {
+			width: 100%;
 		}
 	}
 
