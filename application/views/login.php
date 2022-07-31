@@ -44,7 +44,7 @@
     -moz-box-shadow: 1px 12px 55px -8px rgba(0, 0, 0, 0.79);
     border-radius: 10px;
     height: 257px;
-    margin: 35vh auto;
+    margin: auto;
     width: 298px;
   }
 
@@ -175,11 +175,7 @@
     box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999;
   }
 
-  .wrappers {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh; */
-  }
+
 
   html,
   body,
@@ -270,8 +266,51 @@
     position: absolute;
     top: 0;
     z-index: -10;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+  }
+
+  .wrappers {
+    top: 0;
+    margin: auto;
+    position: relative;
+    width: 50vw;
+    height: 100%;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .wrappers {
+      width: 100vw;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .wrappers {
+      width: 70vw;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .wrappers {
+      width: 65vw;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .wrappers {
+      width: 60vw;
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .wrappers {
+      width: 50vw;
+    }
   }
 </style>
 
@@ -280,7 +319,7 @@
     <div class="gambar">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWzM0wQLbylRGzF1q8OVLOIJZFC-B4H6-WVqk7oJf8_HFZSp_K5Df2OPfZwAzbDSUr3fBmNN3PTRMULffOaQDDWfLMS6enCsW9qcbPE95qiElHfSS6riHyGXHuoqD6CuuGnqW1vnZ_2sNTZVuvy2VuvyaBJ5jGdYPjOqpRFFm5QjRA2X0H3AirmQ/w1600/lokasi-harga-menu-memboemi-coffee-tigaraksa-tangerang.jpg" class="wrapper" />
     </div>
-    <div>
+    <div style="padding-top: 35vh;">
       <div class="login">
         <input type="text" placeholder="Username" id="username">
         <input type="password" placeholder="password" id="password">
