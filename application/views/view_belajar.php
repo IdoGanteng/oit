@@ -460,9 +460,7 @@
 <body>
 
 	<div class="wrappers">
-		
-	</div>
-			<div class="mx-auto header">
+	<div class="mx-auto header">
 				<button onclick="logot()">
 					<h3>Logout</h3>
 				</button>
@@ -506,6 +504,11 @@
 					</div>
 				</div>
 				
+			</div>
+			<div class="mx-auto header">
+				<button onclick="logot()">
+					<h3>Logout</h3>
+				</button>
 			</div>
 
 		</div>
