@@ -297,7 +297,7 @@
 			line-height: 1.2;
 			font-weight: unset;
 			position: absolute;
-			width: 10%;
+			
 			left: 0px;
 			top: 0;
 		}
@@ -342,7 +342,7 @@
 		}
 
 		tbody tr {
-			font-size: 14px;
+			font-size: 15px;
 		}
 	}
 
@@ -365,6 +365,7 @@
 		width: 100%;
 		display: flex;
 		justify-content: right;
+		color: black;
 
 	}
 
@@ -495,6 +496,7 @@
 						</table>
 					</div>
 				</div>
+				
 			</div>
 			<div class="mx-auto footer">
 				<button onclick="logot()">
