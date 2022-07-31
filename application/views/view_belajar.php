@@ -1,11 +1,3 @@
-<?php
-// foreach ($sensor as $key => $value) {
-// 	echo $value->data_sensor;
-// 	echo "<br>";
-// }
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,24 +6,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
-
-	<link rel="stylesheet" type="text/css" href="/css/util.css">
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	
 	<!--===============================================================================================-->
 </head>
 <style>
+	.bodi{
+		background: url("https://drive.google.com/uc?export=view&id=1O6iXALNY1x1-CYTB56Lzg3hEVnr5hRXw");
+	}
 	.judul {
-		background: #f50101;
-		background: -webkit-linear-gradient(45deg, #031368, #c4c4c4);
-		background: -o-linear-gradient(45deg, #031368, #c4c4c4);
-		background: -moz-linear-gradient(45deg, #031368, #c4c4c4);
-		background: linear-gradient(45deg, #031368, #c4c4c4);
-		width: 70vw;
-		padding: 30px;
-		margin: auto;
-		text-align: center;
-		border-radius: 5%;
+		
+  font-family: "Open Sans", sans-serif;
+  background: url("https://drive.google.com/uc?export=view&id=1O6iXALNY1x1-CYTB56Lzg3hEVnr5hRXw") fixed  ;
+object-fit: contain;
+	font-size: medium;
+	color: #fff;
+		
+		text-align: left;
+		border-radius: 500%;
 	}
 
 	a {
@@ -48,7 +39,7 @@
 	}
 
 	button:hover {
-		background-color: #ccc;
+		background-color: red;
 		cursor: pointer;
 	}
 
@@ -58,16 +49,9 @@
 
 	.table tr th,
 	.table tr td {
-		padding: 5px;
+		padding: 0px;
 	}
 
-	/*
-Code by YukCoding Tutor
-www.yukcoding.id
-*/
-
-	/*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
 	* {
 		margin: 0px;
 		padding: 0px;
@@ -76,7 +60,7 @@ www.yukcoding.id
 
 	body,
 	html {
-		height: 100%;
+		height: 80%;
 		font-family: sans-serif;
 	}
 
@@ -102,7 +86,7 @@ www.yukcoding.id
 	h2,
 	h3,
 	h4,
-	h5,
+	h5, 
 	h6 {
 		margin: 0px;
 	}
@@ -120,39 +104,33 @@ www.yukcoding.id
 
 	/* ------------------------------------ */
 	input {
-		display: block;
+		display: none;
 		outline: none;
 		border: none !important;
 	}
 
 	textarea {
-		display: block;
+		display: none;
 		outline: none;
 	}
 
 	textarea:focus,
 	input:focus {
-		border-color: transparent !important;
+		border-color: flex !important;
 	}
 
 	/* ------------------------------------ */
 	button {
 		outline: none !important;
 		border: none;
-		background: transparent;
+
 	}
 
 	button:hover {
 		cursor: pointer;
 	}
 
-	iframe {
-		border: none !important;
-	}
-
-
-
-
+	
 	/*//////////////////////////////////////////////////////////////////
 [ Utiliti ]*/
 
@@ -166,17 +144,20 @@ www.yukcoding.id
 
 	.limiter {
 		width: 100%;
-		margin: 0 auto;
+		margin: 0 center;
+		font-family: "Open Sans", sans-serif;
+		background: url("https://drive.google.com/uc?export=view&id=1O6iXALNY1x1-CYTB56Lzg3hEVnr5hRXw") fixed   ;
+		object-fit: contain;
+ 		 
 	}
 
 	.container-table100 {
 		width: 100%;
-		min-height: 100vh;
-		background: #fdfdfd;
-		background: -webkit-linear-gradient(45deg, #031368, #c4c4c4);
-		background: -o-linear-gradient(45deg, #031368, #c4c4c4);
-		background: -moz-linear-gradient(45deg, #031368, #c4c4c4);
-		background: linear-gradient(45deg, #031368, #c4c4c4);
+		min-height: 96vh;
+		font-family: "Open Sans", sans-serif;
+		background: url("https://drive.google.com/uc?export=view&id=1O6iXALNY1x1-CYTB56Lzg3hEVnr5hRXw") fixed ;
+		object-fit: contain;
+  
 
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -219,7 +200,7 @@ www.yukcoding.id
 	}
 
 	table tbody tr {
-		height: 50px;
+		height: 40px;
 	}
 
 	table tbody tr:last-child {
@@ -288,17 +269,17 @@ www.yukcoding.id
 		}
 
 		table thead {
-			display: none;
+			display: block;
 		}
 
 		table tbody tr {
 			height: auto;
-			padding: 37px 0;
+			padding: 10px 0;
 		}
 
 		table tbody tr td {
 			padding-left: 40% !important;
-			margin-bottom: 24px;
+			margin-bottom: 10px;
 		}
 
 		table tbody tr td:last-child {
@@ -312,8 +293,8 @@ www.yukcoding.id
 			line-height: 1.2;
 			font-weight: unset;
 			position: absolute;
-			width: 40%;
-			left: 30px;
+			width: 10%;
+			left: 0px;
 			top: 0;
 		}
 
@@ -379,17 +360,25 @@ www.yukcoding.id
 	.footer {
 		width: 100%;
 		display: flex;
-		justify-content: center;
-		padding: 10px 0;
+		justify-content: right ;
+		
+	}
+	.header{
+		
+		width: 100%;
+		display: flex;
+		justify-content: right;
 	}
 </style>
 
 <body>
 
 	<div class="limiter">
+		
 		<div class="container-table100">
 			<div class="wrap-table100" style="margin-top: 5vh;">
-				<div class="judul">
+				<div class="judul" >
+					<img src="https://drive.google.com/uc?export=view&id=1O6iXALNY1x1-CYTB56Lzg3hEVnr5hRXw">
 					<h1>Memboemi Cafe</h1>
 					<h2>Pencatatan Volume Tandon Air </h2>
 				</div>
@@ -424,12 +413,10 @@ www.yukcoding.id
 			</div>
 		</div>
 		<div class="mx-auto footer">
-			<span id="power" style="padding-right: 10px;">Powered By</span>
-			<a href="https://github.com/kevadamar" target="_blank">IM3 Oreedo</a>
-			<b style="padding: 0 10px;">&</b>
-			<a href="https://kevadamarg.com" target="_blank">Keva Damar Galih</a>
-			<i class="bi bi-door-closed"><button onclick="logot()">Logout</button></i>
+			<button onclick="logot()">
+			<h3>Logout</h3></button>
 		</div>
+		
 	</div>
 
 
@@ -461,7 +448,7 @@ www.yukcoding.id
 				})
 		}
 
-		document.getElementById('power').innerHTML = 'Powered By'
+	
 		const getLocal = window.localStorage.getItem('login')
 
 		if (!getLocal) {
