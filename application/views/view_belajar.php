@@ -6,23 +6,28 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
-	
+
 	<!--===============================================================================================-->
 </head>
 <style>
-	.bodi{
-		background: url("https://drive.google.com/uc?export=view&id=1O6iXALNY1x1-CYTB56Lzg3hEVnr5hRXw");
-	}
+
 	.judul {
-		
-  font-family: "Open Sans", sans-serif;
-  background: url("https://drive.google.com/uc?export=view&id=1O6iXALNY1x1-CYTB56Lzg3hEVnr5hRXw") fixed  ;
-object-fit: contain;
-	font-size: medium;
-	color: #fff;
-		
+
+		font-family: "Open Sans", sans-serif;
+		object-fit: contain;
+		font-size: medium;
+		color: #fff;
 		text-align: left;
-		border-radius: 500%;
+		border: 1px solid;
+		color: black;
+		background: rgba(255, 255, 255, 0.4);
+		width: 40vw;
+		padding: 10px;
+		letter-spacing: 2px;
+		border-radius: 6px;
+		box-shadow: 1px 12px 55px -8px rgb(0 0 0 / 79%);
+		-webkit-box-shadow: 1px 12px 55px -8px rgb(0 0 0 / 79%);
+		-moz-box-shadow: 1px 12px 55px -8px rgba(0, 0, 0, 0.79);
 	}
 
 	a {
@@ -86,7 +91,7 @@ object-fit: contain;
 	h2,
 	h3,
 	h4,
-	h5, 
+	h5,
 	h6 {
 		margin: 0px;
 	}
@@ -130,7 +135,7 @@ object-fit: contain;
 		cursor: pointer;
 	}
 
-	
+
 	/*//////////////////////////////////////////////////////////////////
 [ Utiliti ]*/
 
@@ -146,18 +151,18 @@ object-fit: contain;
 		width: 100%;
 		margin: 0 center;
 		font-family: "Open Sans", sans-serif;
-		background: url("https://drive.google.com/uc?export=view&id=1O6iXALNY1x1-CYTB56Lzg3hEVnr5hRXw") fixed   ;
+
 		object-fit: contain;
- 		 
+
 	}
 
 	.container-table100 {
 		width: 100%;
 		min-height: 96vh;
 		font-family: "Open Sans", sans-serif;
-		background: url("https://drive.google.com/uc?export=view&id=1O6iXALNY1x1-CYTB56Lzg3hEVnr5hRXw") fixed ;
+
 		object-fit: contain;
-  
+
 
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -360,29 +365,38 @@ object-fit: contain;
 	.footer {
 		width: 100%;
 		display: flex;
-		justify-content: right ;
-		
+		justify-content: right;
+
 	}
-	.header{
-		
+
+	.header {
+
 		width: 100%;
 		display: flex;
 		justify-content: right;
+	}
+
+	.wrapper {
+		position: absolute;
+		top: 0;
+		z-index: -10;
+		width: 100vw;
+		height: 100vh;
 	}
 </style>
 
 <body>
 
 	<div class="limiter">
-		
+		<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWzM0wQLbylRGzF1q8OVLOIJZFC-B4H6-WVqk7oJf8_HFZSp_K5Df2OPfZwAzbDSUr3fBmNN3PTRMULffOaQDDWfLMS6enCsW9qcbPE95qiElHfSS6riHyGXHuoqD6CuuGnqW1vnZ_2sNTZVuvy2VuvyaBJ5jGdYPjOqpRFFm5QjRA2X0H3AirmQ/w1600/lokasi-harga-menu-memboemi-coffee-tigaraksa-tangerang.jpg" class="wrapper" />
 		<div class="container-table100">
 			<div class="wrap-table100" style="margin-top: 5vh;">
-				<div class="judul" >
-					<img src="https://drive.google.com/uc?export=view&id=1O6iXALNY1x1-CYTB56Lzg3hEVnr5hRXw">
+				<div class="judul">
+					<!-- <img src="https://drive.google.com/uc?export=view&id=1O6iXALNY1x1-CYTB56Lzg3hEVnr5hRXw"> -->
 					<h1>Memboemi Cafe</h1>
 					<h2>Pencatatan Volume Tandon Air </h2>
 				</div>
-				<div class="table100" style="margin-top: 25vh">
+				<div class="table100" style="margin-top: 5vh">
 					<table>
 						<thead>
 							<tr class="table100-head">
@@ -414,9 +428,10 @@ object-fit: contain;
 		</div>
 		<div class="mx-auto footer">
 			<button onclick="logot()">
-			<h3>Logout</h3></button>
+				<h3>Logout</h3>
+			</button>
 		</div>
-		
+
 	</div>
 
 
@@ -439,7 +454,7 @@ object-fit: contain;
 		function deletes(id) {
 			console.log(id, '<?php echo $_SERVER['PHP_SELF']; ?>')
 			if (confirm("Are you sure you want to delete this?"))
-				fetch('<?php echo $_SERVER['PHP_SELF']; ?>'.replace('/tampilan','') + '/delete?id=' + id)
+				fetch('<?php echo $_SERVER['PHP_SELF']; ?>'.replace('/tampilan', '') + '/delete?id=' + id)
 				.then(response => response)
 				.then(data => {
 					console.log(data, 'k')
@@ -448,11 +463,26 @@ object-fit: contain;
 				})
 		}
 
-	
+
 		const getLocal = window.localStorage.getItem('login')
 
 		if (!getLocal) {
 			routto()
+		}
+
+		window.onload = function() {
+			var backgroundImg = ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWzM0wQLbylRGzF1q8OVLOIJZFC-B4H6-WVqk7oJf8_HFZSp_K5Df2OPfZwAzbDSUr3fBmNN3PTRMULffOaQDDWfLMS6enCsW9qcbPE95qiElHfSS6riHyGXHuoqD6CuuGnqW1vnZ_2sNTZVuvy2VuvyaBJ5jGdYPjOqpRFFm5QjRA2X0H3AirmQ/w1600/lokasi-harga-menu-memboemi-coffee-tigaraksa-tangerang.jpg",
+				"https://i0.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSqBc6S27kZeYtDXUAH5wVLnO7K2vBN_DyIsRc24HO95xUikqywKyWcxEw6syVhPtNEMh-9HwARa0B8E5BhLXdmWnjgeRkcUEvykzJQaevTuNJCn8lZUQu8Qcit-d64lrxXkaHTie2rF6hpPfrJzYcQZyqGXx8Xa6Xlyke64OGZTg0QIK3HBJdwQ/w640-h640/memboemi-coffee-and-resto-tigaraksa-tangerang.jpg?resize=640%2C640&ssl=1"
+			]
+
+			setInterval(changeImage, 2000);
+
+			function changeImage() {
+				var i = Math.floor((Math.random() * 2));
+
+				document.querySelector('.wrapper').src = backgroundImg[i];
+
+			}
 		}
 	</script>
 
