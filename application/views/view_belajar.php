@@ -49,6 +49,7 @@
 
 	.table {
 		border-collapse: collapse;
+
 	}
 
 	.table tr th,
@@ -172,6 +173,7 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		padding: 33px 30px;
+		
 	}
 
 	.wrap-table100 {
@@ -183,10 +185,11 @@
 		border-collapse: collapse;
 		background: white;
 		border-radius: 10px;
-		overflow: hidden;
 		width: 100%;
 		margin: 0 auto;
 		position: relative;
+		
+
 	}
 
 	table * {
@@ -205,6 +208,7 @@
 
 	table tbody tr {
 		height: 40px;
+		
 	}
 
 	table tbody tr:last-child {
@@ -238,6 +242,8 @@
 		color: #fff;
 		line-height: 1.2;
 		font-weight: unset;
+		
+		
 	}
 
 	tbody tr:nth-child(even) {
@@ -250,6 +256,7 @@
 		color: #808080;
 		line-height: 1.2;
 		font-weight: unset;
+		
 	}
 
 	tbody tr:hover {
@@ -263,6 +270,8 @@
 	@media screen and (max-width: 992px) {
 		table {
 			display: block;
+			overflow: scroll;
+			
 		}
 
 		table>*,
@@ -297,7 +306,6 @@
 			line-height: 1.2;
 			font-weight: unset;
 			position: absolute;
-			
 			left: 0px;
 			top: 0;
 		}
@@ -455,16 +463,15 @@
 			width: 50vw;
 		}
 	}
+	.over{
+		overflow-y: scroll;
+	}
 </style>
 
 <body>
 
 	<div class="wrappers">
-	<div class="mx-auto header">
-				<button onclick="logot()">
-					<h3>Logout</h3>
-				</button>
-			</div>
+	
 		<div class="limiter">
 			<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWzM0wQLbylRGzF1q8OVLOIJZFC-B4H6-WVqk7oJf8_HFZSp_K5Df2OPfZwAzbDSUr3fBmNN3PTRMULffOaQDDWfLMS6enCsW9qcbPE95qiElHfSS6riHyGXHuoqD6CuuGnqW1vnZ_2sNTZVuvy2VuvyaBJ5jGdYPjOqpRFFm5QjRA2X0H3AirmQ/w1600/lokasi-harga-menu-memboemi-coffee-tigaraksa-tangerang.jpg" class="wrapper" />
 			<div class="container-table100">
@@ -474,7 +481,7 @@
 						<h1>Memboemi Cafe</h1>
 						<h2>Pencatatan Volume Tandon Air </h2>
 					</div>
-					<div class="table100" style="margin-top: 5vh">
+					<div class="table100" style="margin-top: 5vh; height:55vh; overflow:auto" >
 						<table>
 							<thead>
 								<tr class="table100-head">
@@ -485,6 +492,7 @@
 								</tr>
 							</thead>
 							<tbody>
+							
 								<?php
 								$no = 0;
 								foreach ($sensor as $key => $value) {
@@ -499,6 +507,7 @@
 								<?php
 								}
 								?>
+								
 							</tbody>
 						</table>
 					</div>
