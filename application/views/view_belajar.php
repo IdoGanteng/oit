@@ -10,7 +10,6 @@
 	<!--===============================================================================================-->
 </head>
 <style>
-
 	.judul {
 
 		font-family: "Open Sans", sans-serif;
@@ -65,7 +64,7 @@
 
 	body,
 	html {
-		height: 80%;
+		/* height: 80%; */
 		font-family: sans-serif;
 	}
 
@@ -380,60 +379,113 @@
 		position: absolute;
 		top: 0;
 		z-index: -10;
-		width: 100vw;
+		width: 100%;
 		height: 100vh;
+	}
+
+	.wrappers {
+		top: 0;
+		margin: auto;
+		position: relative;
+		width: 50vw;
+		height: 100%;
+	}
+
+	/* Extra small devices (phones, 600px and down) */
+	@media only screen and (max-width: 600px) {
+		.wrappers {
+			width: 100vw;
+		}
+
+		table thead tr {
+			height: 100px;
+			padding: 5px;
+		}
+
+		.judul {
+			width: 100%;
+		}
+	}
+
+	/* Small devices (portrait tablets and large phones, 600px and up) */
+	@media only screen and (min-width: 600px) {
+		.wrappers {
+			width: 70vw;
+		}
+	}
+
+	/* Medium devices (landscape tablets, 768px and up) */
+	@media only screen and (min-width: 768px) {
+		.wrappers {
+			width: 65vw;
+		}
+	}
+
+	/* Large devices (laptops/desktops, 992px and up) */
+	@media only screen and (min-width: 992px) {
+		.wrappers {
+			width: 60vw;
+		}
+	}
+
+	/* Extra large devices (large laptops and desktops, 1200px and up) */
+	@media only screen and (min-width: 1200px) {
+		.wrappers {
+			width: 50vw;
+		}
 	}
 </style>
 
 <body>
 
-	<div class="limiter">
-		<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWzM0wQLbylRGzF1q8OVLOIJZFC-B4H6-WVqk7oJf8_HFZSp_K5Df2OPfZwAzbDSUr3fBmNN3PTRMULffOaQDDWfLMS6enCsW9qcbPE95qiElHfSS6riHyGXHuoqD6CuuGnqW1vnZ_2sNTZVuvy2VuvyaBJ5jGdYPjOqpRFFm5QjRA2X0H3AirmQ/w1600/lokasi-harga-menu-memboemi-coffee-tigaraksa-tangerang.jpg" class="wrapper" />
-		<div class="container-table100">
-			<div class="wrap-table100" style="margin-top: 5vh;">
-				<div class="judul">
-					<!-- <img src="https://drive.google.com/uc?export=view&id=1O6iXALNY1x1-CYTB56Lzg3hEVnr5hRXw"> -->
-					<h1>Memboemi Cafe</h1>
-					<h2>Pencatatan Volume Tandon Air </h2>
-				</div>
-				<div class="table100" style="margin-top: 5vh">
-					<table>
-						<thead>
-							<tr class="table100-head">
-								<th class="column1">No</th>
-								<th class="column3">Data Sensor</th>
-								<th class="column4">Waktu</th>
-								<th class="column1">Action</th>
-							</tr>
-						</thead>
-						<tbody>
-							<?php
-							$no = 0;
-							foreach ($sensor as $key => $value) {
-								$no++;
-							?>
-								<tr>
-									<td class="column1"><?= $no; ?></td>
-									<td class="column3"><?= $value->data_sensor; ?> L</td>
-									<td class="column4"><?= date("d-M-Y H:i:s", $value->waktu); ?></td>
-									<td class="column1"><a class="btn" href="#" onclick="deletes(<?= $value->id_sensor; ?>)">Delete</a></td>
+	<div class="wrappers">
+		<div class="limiter">
+			<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWzM0wQLbylRGzF1q8OVLOIJZFC-B4H6-WVqk7oJf8_HFZSp_K5Df2OPfZwAzbDSUr3fBmNN3PTRMULffOaQDDWfLMS6enCsW9qcbPE95qiElHfSS6riHyGXHuoqD6CuuGnqW1vnZ_2sNTZVuvy2VuvyaBJ5jGdYPjOqpRFFm5QjRA2X0H3AirmQ/w1600/lokasi-harga-menu-memboemi-coffee-tigaraksa-tangerang.jpg" class="wrapper" />
+			<div class="container-table100">
+				<div class="wrap-table100" style="margin-top: 5vh;">
+					<div class="judul">
+						<!-- <img src="https://drive.google.com/uc?export=view&id=1O6iXALNY1x1-CYTB56Lzg3hEVnr5hRXw"> -->
+						<h1>Memboemi Cafe</h1>
+						<h2>Pencatatan Volume Tandon Air </h2>
+					</div>
+					<div class="table100" style="margin-top: 5vh">
+						<table>
+							<thead>
+								<tr class="table100-head">
+									<th class="column1">No</th>
+									<th class="column3">Data Sensor</th>
+									<th class="column4">Waktu</th>
+									<th class="column1">Action</th>
 								</tr>
-							<?php
-							}
-							?>
-						</tbody>
-					</table>
+							</thead>
+							<tbody>
+								<?php
+								$no = 0;
+								foreach ($sensor as $key => $value) {
+									$no++;
+								?>
+									<tr>
+										<td class="column1"><?= $no; ?></td>
+										<td class="column3"><?= $value->data_sensor; ?> L</td>
+										<td class="column4"><?= date("d-M-Y H:i:s", $value->waktu); ?></td>
+										<td class="column1"><a class="btn" href="#" onclick="deletes(<?= $value->id_sensor; ?>)">Delete</a></td>
+									</tr>
+								<?php
+								}
+								?>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="mx-auto footer">
-			<button onclick="logot()">
-				<h3>Logout</h3>
-			</button>
-		</div>
+			<div class="mx-auto footer">
+				<button onclick="logot()">
+					<h3>Logout</h3>
+				</button>
+			</div>
 
+		</div>
 	</div>
-
 
 
 
