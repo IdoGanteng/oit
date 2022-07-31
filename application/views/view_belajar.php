@@ -374,6 +374,8 @@
 		width: 100%;
 		display: flex;
 		justify-content: right;
+		position: absolute;
+		
 	}
 
 	.wrapper {
@@ -498,7 +500,7 @@
 				</div>
 				
 			</div>
-			<div class="mx-auto footer">
+			<div class="mx-auto header">
 				<button onclick="logot()">
 					<h3>Logout</h3>
 				</button>
