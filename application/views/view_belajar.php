@@ -375,7 +375,7 @@
 		display: flex;
 		justify-content: right;
 		position: absolute;
-		
+
 	}
 
 	.wrapper {
@@ -460,6 +460,13 @@
 <body>
 
 	<div class="wrappers">
+		
+	</div>
+			<div class="mx-auto header">
+				<button onclick="logot()">
+					<h3>Logout</h3>
+				</button>
+			</div>
 		<div class="limiter">
 			<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWzM0wQLbylRGzF1q8OVLOIJZFC-B4H6-WVqk7oJf8_HFZSp_K5Df2OPfZwAzbDSUr3fBmNN3PTRMULffOaQDDWfLMS6enCsW9qcbPE95qiElHfSS6riHyGXHuoqD6CuuGnqW1vnZ_2sNTZVuvy2VuvyaBJ5jGdYPjOqpRFFm5QjRA2X0H3AirmQ/w1600/lokasi-harga-menu-memboemi-coffee-tigaraksa-tangerang.jpg" class="wrapper" />
 			<div class="container-table100">
@@ -499,11 +506,6 @@
 					</div>
 				</div>
 				
-			</div>
-			<div class="mx-auto header">
-				<button onclick="logot()">
-					<h3>Logout</h3>
-				</button>
 			</div>
 
 		</div>
