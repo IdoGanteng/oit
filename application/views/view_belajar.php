@@ -366,7 +366,7 @@
 		display: flex;
 		justify-content: right;
 		color: black;
-
+		position: absolute;
 	}
 
 	.header {
