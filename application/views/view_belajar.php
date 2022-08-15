@@ -501,11 +501,9 @@
 										$status = 'Air Aman';
 
 										if($value->data_sensor >= 800)
-										$status = 'Air Penuh,
-										Motor Pompa Air Dimaatikan';
+										$status = 'Air Penuh,Motor Pompa Air Dimaatikan';
 										if($value->data_sensor <= 60)
-										$status = 'Air Habis,
-										Motor Pompa Air Dihidupkan';
+										$status = 'Air Habis,Motor Pompa Air Dihidupkan';
 								?>
 									<tr>
 										<td class="column1"><?= $key+1; ?></td>
