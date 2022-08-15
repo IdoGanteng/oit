@@ -487,6 +487,7 @@
 								<tr class="table100-head">
 									<th class="column1">No</th>
 									<th class="column3">Data Sensor</th>
+									<th class="column5">Status</th>
 									<th class="column4">Waktu</th>
 									<th class="column1">Action</th>
 								</tr>
@@ -497,10 +498,17 @@
 								$no = 0;
 								foreach ($sensor as $key => $value) {
 									$no++;
+										$status = 'Mendeteksi Ketinggian air';
+
+										if($value->data_sensor >= 800)
+										$status = 'Motor Pompa Air Dimaatikan';
+										if($value->data_sensor <= 60)
+										$status = 'Motor Pompa Air Dihidupkan';
 								?>
 									<tr>
-										<td class="column1"><?= $no; ?></td>
+										<td class="column1"><?= $key+1; ?></td>
 										<td class="column3"><?= $value->data_sensor; ?> L</td>
+										<td class="column5"><?= $status; ?></td>
 										<td class="column4"><?= date("d-M-Y H:i:s", $value->waktu); ?></td>
 										<td class="column1"><a class="btn" href="#" onclick="deletes(<?= $value->id_sensor; ?>)">Delete</a></td>
 									</tr>
