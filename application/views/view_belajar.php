@@ -498,7 +498,7 @@
 								$no = 0;
 								foreach ($sensor as $key => $value) {
 									$no++;
-										$status = 'Mendeteksi Ketinggian air';
+										$status = 'Air Aman';
 
 										if($value->data_sensor >= 800)
 										$status = 'Motor Pompa Air Dimaatikan';
